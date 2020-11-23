@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoopUisraelSQlite.Elemento">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10">
+                <Label x:Name="mensaje"/>
+                <Label Text="Nombre: "/>
+                <Entry x:Name="Nombre" Placeholder="Nombre"/>
+                <Label Text="Usuario: "/>
+                <Entry x:Name="Usuario" Placeholder="Usuario"/>
+                <Label Text="Contraseña: "/>
+                <Entry x:Name="Contrasenia" Placeholder="Contraseña"/>
+                <Button x:Name="btn_actualizar" Text="Actualizar" Clicked="btn_actualizar_Clicked" BackgroundColor="LawnGreen"/>
+                <Button x:Name="btn_eliminar" Text="Eliminar" Clicked="btn_eliminar_Clicked" BackgroundColor="Red"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

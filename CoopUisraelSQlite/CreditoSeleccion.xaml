@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CoopUisraelSQlite.CreditoSeleccion">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10">
+                 <Label x:Name="lbUsuario"
+               FontSize="Medium"
+               VerticalOptions="End"
+               HorizontalOptions="End"/>
+             
+                <Label x:Name="mensaje"/>
+                <Label Text="Nombre: "/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+                <Label Text="Apellido: "/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido"/>
+                <Label Text="Dirección: "/>
+                <Entry x:Name="txtDireccion" Placeholder="Dirección"/>
+                <Label Text="Monto: "/>
+                <Entry x:Name="txtMonto" Placeholder="Monto"/>
+                <Label Text="Plazo: "/>
+                <Entry x:Name="txtPlazo" Placeholder="Plazo"/>
+                <Button x:Name="btn_actualizar" Text="Actualizar" Clicked="btn_actualizar_Clicked" BackgroundColor="LawnGreen"/>
+                <Button x:Name="btn_eliminar" Text="Eliminar" Clicked="btn_eliminar_Clicked" BackgroundColor="Red"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

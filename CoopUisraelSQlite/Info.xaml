@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CoopUisraelSQlite.Info">
+    <ContentPage.Content>
+        <StackLayout>
+             <Label Text="* Tener cuenta activa"/>
+                
+                <Label Text="* Cédula"/>
+                
+                <Label Text="* Planilla de servicios básicos"/>
+                <Label Text="* Rol de pagos"/>
+                <Label Text="* Certificado de traajo"/>
+                 <Button x:Name="btn_Simular" Text="Simular Crédito" Clicked="btn_SimularCredito_Clicked" BackgroundColor="Azure">
+                </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

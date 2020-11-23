@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CoopUisraelSQlite.CreditoView">
+    <ContentPage.Content>
+         <ScrollView>
+            <StackLayout Padding="20" Spacing="30">
+                <Label Text="Nombres: "/>
+                <Entry Placeholder="Introduce tus nombres" x:Name="txtNombres"/>
+                <Label Text="Apellidos: "/>
+                <Entry Placeholder="Introduce tus Apellidos" x:Name="txtApellidos"/>
+                <Label Text="Direccion: "/>
+                <Entry Placeholder="Direccion" x:Name="txtDireccion"/>
+                <Label Text="Monto del crédito: "/>
+                <Entry Placeholder="Monto" Keyboard="Numeric" x:Name="txtMonto"/>
+
+                <Label Text="Plazo: "/>
+                <Entry Placeholder="Plazo" Keyboard="Numeric" x:Name="txtPlazo"/>
+
+                
+
+                <Button x:Name="btn_CrearCredito" Text="Crear Crédito" Clicked="btn_CrearCredito_Clicked" BackgroundColor="Azure">
+                </Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
