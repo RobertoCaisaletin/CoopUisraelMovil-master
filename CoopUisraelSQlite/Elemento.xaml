@@ -12,6 +12,8 @@
                 <Entry x:Name="Usuario" Placeholder="Usuario"/>
                 <Label Text="Contraseña: "/>
                 <Entry x:Name="Contrasenia" Placeholder="Contraseña"/>
+                <Label Text="Direccion: "/>
+                <Entry x:Name="Direccion" Placeholder="Direccion"/>
                 <Button x:Name="btn_actualizar" Text="Actualizar" Clicked="btn_actualizar_Clicked" BackgroundColor="LawnGreen"/>
                 <Button x:Name="btn_eliminar" Text="Eliminar" Clicked="btn_eliminar_Clicked" BackgroundColor="Red"/>
             </StackLayout>

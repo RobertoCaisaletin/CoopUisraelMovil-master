@@ -8,7 +8,7 @@
                 
                 <Label Text="* Planilla de servicios básicos"/>
                 <Label Text="* Rol de pagos"/>
-                <Label Text="* Certificado de traajo"/>
+                <Label Text="* Certificado de trabajo"/>
                  <Button x:Name="btn_Simular" Text="Simular Crédito" Clicked="btn_SimularCredito_Clicked" BackgroundColor="Azure">
                 </Button>
         </StackLayout>

@@ -28,6 +28,7 @@ namespace CoopUisraelSQlite
             Nombre.Text = nombre;
             Usuario.Text = usuario;
             Contrasenia.Text = clave;
+           
         }
         private void btn_eliminar_Clicked(object sender, EventArgs e)
         {

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Plugin.Media;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -26,7 +27,7 @@ namespace CoopUisraelSQlite
         {
             try
             {
-                var DatosRegistro = new Estudiante { Nombre = Nombre.Text, Usuario = Usuario.Text, Contrasenia = Contrasenia.Text };
+                var DatosRegistro = new Estudiante { Nombre = Nombre.Text, Usuario = Usuario.Text, Contrasenia = Contrasenia.Text, Direccion = Direccion.Text};
                 _conn.InsertAsync(DatosRegistro);
                 limpiarFormulario();
             }
@@ -41,7 +42,13 @@ namespace CoopUisraelSQlite
             Nombre.Text = "";
             Usuario.Text = "";
             Contrasenia.Text = "";
+            Direccion.Text = "";
             DisplayAlert("Alerta", "Se agrego correctamente", "OK");
+        }
+
+        private async void btn_Mapa_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Mapa());
         }
     }
 }
